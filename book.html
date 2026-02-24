@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - MysRetreat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MysRetreat</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stay.html">Stay</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="book.html" class="active">Book</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1>Book Your Stay</h1>
+                <p>Ready to escape to nature? Send us your booking inquiry and we'll get back to you within 24 hours to confirm availability and finalize your reservation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form and Contact Info -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem;">
+                
+                <!-- Booking Form -->
+                <div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 style="color: var(--forest-green); margin-bottom: 2rem;">Booking Inquiry Form</h2>
+                            <form id="bookingForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="checkin">Check-in Date *</label>
+                                        <input type="date" id="checkin" name="checkin" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="checkout">Check-out Date *</label>
+                                        <input type="date" id="checkout" name="checkout" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="guests">Number of Guests *</label>
+                                        <select id="guests" name="guests" required>
+                                            <option value="">Select number of guests</option>
+                                            <option value="1">1 Guest</option>
+                                            <option value="2">2 Guests</option>
+                                            <option value="3">3 Guests</option>
+                                            <option value="4">4 Guests</option>
+                                            <option value="5">5 Guests</option>
+                                            <option value="6">6 Guests</option>
+                                            <option value="7">7+ Guests</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accommodation">Accommodation Type *</label>
+                                        <select id="accommodation" name="accommodation" required>
+                                            <option value="">Select accommodation</option>
+                                            <option value="tent">Tent Sites ($45/night)</option>
+                                            <option value="rv">RV Sites ($65/night)</option>
+                                            <option value="campsite">Basic Campsites ($35/night)</option>
+                                            <option value="lakeside-cabin">Lakeside Cabin ($125/night)</option>
+                                            <option value="forest-cabin">Forest Cabin ($125/night)</option>
+                                            <option value="creek-cabin">Creek Cabin ($125/night)</option>
+                                            <option value="not-sure">Not sure - help me choose</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Special Requests or Questions</label>
+                                    <textarea id="message" name="message" placeholder="Let us know about any special requests, accessibility needs, pet information, or questions about your stay..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem;">
+                                    Check Availability & Send Inquiry
+                                </button>
+                                
+                                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-gray); text-align: center;">
+                                    * Required fields. We'll respond within 24 hours.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <!-- Direct Contact -->
+                    <div class="contact-info" style="margin-bottom: 2rem;">
+                        <h3>Prefer to Call or Email?</h3>
+                        <p style="margin-bottom: 1.5rem;">Our friendly team is ready to help you plan your perfect getaway. Contact us directly for immediate assistance.</p>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">📞 <strong>Phone:</strong></p>
+                            <p style="font-size: 1.3rem; margin-bottom: 1rem;">
+                                <a href="tel:7055550123" style="color: var(--cream); text-decoration: underline; font-weight: 600;">(705) 555-0123</a>
+                            </p>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">✉️ <strong>Email:</strong></p>
+                            <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                                <a href="mailto:info@mysretreat.com" style="color: var(--cream); text-decoration: underline;">info@mysretreat.com</a>
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">🕒 <strong>Office Hours:</strong></p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Peak Season (May-Sep):</strong> 8 AM - 8 PM</p>
+                            <p><strong>Off Season (Oct-Apr):</strong> 9 AM - 5 PM</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Info -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 style="margin-bottom: 1.5rem;">Quick Booking Info</h3>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--forest-green); margin-bottom: 0.5rem;">Rates & Policies</h4>
+                                <ul style="list-style: none; margin-left: 0;">
+                                    <li style="margin-bottom: 0.5rem;">• Tent Sites: $45/night</li>
+                                    <li style="margin-bottom: 0.5rem;">• RV Sites: $65/night</li>
+                                    <li style="margin-bottom: 0.5rem;">• Basic Campsites: $35/night</li>
+                                    <li style="margin-bottom: 0.5rem;">• All Cabins: $125/night</li>
+                                    <li style="margin-bottom: 0.5rem;">• Pet Fee: $10/night</li>
+                                    <li style="margin-bottom: 0.5rem;">• Weekend minimum: 2 nights</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--forest-green); margin-bottom: 0.5rem;">Check-in/out</h4>
+                                <ul style="list-style: none; margin-left: 0;">
+                                    <li style="margin-bottom: 0.5rem;">• Check-in: 3:00 PM - 8:00 PM</li>
+                                    <li style="margin-bottom: 0.5rem;">• Check-out: By 11:00 AM</li>
+                                    <li style="margin-bottom: 0.5rem;">• Late arrivals: Call ahead</li>
+                                    <li style="margin-bottom: 0.5rem;">• Early check-in: Subject to availability</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 style="color: var(--forest-green); margin-bottom: 0.5rem;">What to Bring</h4>
+                                <ul style="list-style: none; margin-left: 0;">
+                                    <li style="margin-bottom: 0.5rem;">• Bedding & towels (cabins include some)</li>
+                                    <li style="margin-bottom: 0.5rem;">• Food & cooking supplies</li>
+                                    <li style="margin-bottom: 0.5rem;">• Outdoor clothing & rain gear</li>
+                                    <li style="margin-bottom: 0.5rem;">• Sunscreen & insect repellent</li>
+                                    <li style="margin-bottom: 0.5rem;">• Camera for amazing memories!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cancellation Policy -->
+                    <div class="card" style="margin-top: 2rem;">
+                        <div class="card-content">
+                            <h3 style="margin-bottom: 1rem;">Cancellation Policy</h3>
+                            <ul style="list-style: none; margin-left: 0;">
+                                <li style="margin-bottom: 0.5rem;">• Free cancellation up to 7 days before arrival</li>
+                                <li style="margin-bottom: 0.5rem;">• 50% refund for 3-7 days notice</li>
+                                <li style="margin-bottom: 0.5rem;">• No refund for less than 3 days notice</li>
+                                <li style="margin-bottom: 0.5rem;">• Weather-related cancellations: Full refund</li>
+                                <li style="margin-bottom: 0.5rem;">• Deposit required: 50% of total stay</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about booking and your stay</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">Do you accept pets?</h3>
+                        <p>Yes! We're a pet-friendly campground. There's a $10/night pet fee, and pets must be leashed at all times. Please clean up after your pet and respect other guests.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">Is WiFi available?</h3>
+                        <p>Basic WiFi is available near the main office and camp store. Coverage throughout the property is limited - perfect for a digital detox!</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">Can I bring my own boat?</h3>
+                        <p>Absolutely! We have a boat launch available for guests. All watercraft must comply with Ontario boating regulations.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">Are there shower facilities?</h3>
+                        <p>Yes, we have clean, modern washroom and shower facilities throughout the campground. Cabins have their own private bathrooms.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">Is firewood available?</h3>
+                        <p>Yes, seasoned firewood is available for purchase at our camp store. To protect local forests, please don't bring firewood from other areas.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">What about food and supplies?</h3>
+                        <p>Our camp store has basic supplies, snacks, and ice. For full groceries, Kearney is 12 km away with a grocery store, LCBO, and restaurants.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">Is swimming safe for children?</h3>
+                        <p>Our beach has shallow entry areas perfect for kids, but children should always be supervised. Life jackets are recommended and available for rent.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--forest-green); margin-bottom: 0.5rem;">When is your busiest time?</h3>
+                        <p>July and August weekends are our busiest times. For quieter experiences, try weekdays or shoulder seasons (May-June, September).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="section" style="background: var(--lake-blue); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Start Your Adventure Today</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Join thousands of families who've made MysRetreat their favorite outdoor destination. Your perfect wilderness getaway is just a booking away!</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#bookingForm" class="btn btn-primary">Fill Out Form Above</a>
+                <a href="tel:7055550123" class="btn" style="background: transparent; border: 2px solid white; color: white;">Call (705) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MysRetreat</h3>
+                <p>Your gateway to wilderness adventure on Himbury Lake, just minutes from Algonquin Park.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="stay.html">Accommodations</a>
+                <a href="experience.html">Activities</a>
+                <a href="location.html">Location & Directions</a>
+                <a href="book.html">Book Your Stay</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>123 Lakeview Road<br>Kearney, ON P0A 1M0</p>
+                <p>Phone: <a href="tel:7055550123">(705) 555-0123</a></p>
+                <p>Email: <a href="mailto:info@mysretreat.com">info@mysretreat.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 MysRetreat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form handling
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your booking inquiry! We will contact you within 24 hours to confirm availability and finalize your reservation.\n\nFor immediate assistance, please call (705) 555-0123.');
+        });
+
+        // Set minimum date to today
+        document.getElementById('checkin').min = new Date().toISOString().split('T')[0];
+        document.getElementById('checkout').min = new Date().toISOString().split('T')[0];
+
+        // Update checkout min date when checkin changes
+        document.getElementById('checkin').addEventListener('change', function() {
+            const checkinDate = new Date(this.value);
+            checkinDate.setDate(checkinDate.getDate() + 1);
+            document.getElementById('checkout').min = checkinDate.toISOString().split('T')[0];
+        });
+    </script>
+</body>
+</html>
